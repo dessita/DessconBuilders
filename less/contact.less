@@ -1,0 +1,78 @@
+//main: main.less, compress: true, strictMath: true
+#contact-page
+{
+    
+    
+    
+    padding:100px 10px 0;
+    
+    
+    #form1
+    {
+        input{
+        width:100%;}
+        textarea
+        {
+         width:100%;
+        }
+        ::-webkit-input-placeholder {
+   color: lighten(@gray-light,20%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten(@gray-light,20%);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten(@gray-light,20%);  
+}
+
+:-ms-input-placeholder {  
+   color:lighten(@gray-light,20%);  
+}
+        
+        .phone-field
+        {
+        width:30%;
+            float:left;
+            display:inline-block;
+            
+        }
+        .phone-dash{
+             width:5%;
+            float:left;
+            display:inline-block;
+             .text-center;
+        }
+       li
+        {
+        margin-top:20px;
+        }
+    }
+    .call-img
+    {
+        width:800px;
+        
+    }
+    
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+
+    #contact-page
+    {
+        padding:100px 30px 0;
+
+
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
