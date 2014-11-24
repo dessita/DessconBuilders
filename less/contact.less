@@ -1,12 +1,30 @@
 //main: main.less, compress: true, strictMath: true
 #contact-page
 {
-    
-    
-    
-    padding:100px 10px 0;
-    
-    
+   padding:100px 10px 0;
+    background:#e6e6e6;
+    .pic-map{
+   
+    }
+     .zoom-map { 
+        
+   opacity:0;   
+        padding: 10px 20px 10px;
+        border: 0px;
+        background: none;
+        position: absolute;
+        top: -3px;
+        left: 0px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;    
+        &:hover { 
+            opacity:1;
+           
+
+        }
+    }
     #form1
     {
         input{
@@ -54,7 +72,19 @@
         width:800px;
         
     }
-    
+     img{
+        padding: 10px 10px;
+        background:@gray-lighter;
+       
+    }
+.address-phone
+    {
+        margin-top:20px;
+        padding:0 20px;
+        text-align:center;
+    }
+   
+   
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -65,10 +95,15 @@
 
     #contact-page
     {
-        padding:100px 30px 0;
-
+        padding:100px 30px 50px;
+        
+        li#foli1
+        {
+            margin-top:-0px;
+        }
 
     }
+  
 }
 
 /* Medium devices (desktops, 992px and up) */
